@@ -1,0 +1,196 @@
+@media (max-width: 1149px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+    height: 100%;
+  }
+
+  .statistics__header-desktop {
+    display: none;
+  }
+
+  .main__statistics-inner {
+    padding: 1.2rem 0 0 0.3rem;
+  }
+
+  .statistics__subtitle {
+    padding-top: 0.1rem;
+  }
+
+  .statistics__list {
+    height: calc(100% - 3.2rem);
+    margin-top: 0.4rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .main__grid-top-button {
+    flex-direction: row;
+    font-size: 1.3rem;
+  }
+
+  .main__grid-middle-odd-button-chip {
+    width: 0;
+    max-width: 0;
+    opacity: 0;
+    transition: 0.1s;
+  }
+
+  .main__grid-top-button-inner {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-width: 0.1rem;
+  }
+
+  .main__grid-top-button.active {
+    flex-direction: row;
+
+    .main__grid-middle-odd-button-chip {
+      width: 1rem;
+      max-width: 1rem;
+      opacity: 1;
+      margin-left: 0.6rem;
+      margin-top: 0;
+    }
+  }
+
+  .main__jackpot-amount {
+    height: 2rem;
+  }
+
+  .spinner__amount-container-value {
+    height: 2rem;
+  }
+
+  .spinner__amount-item:nth-child(3) {
+    margin-right: 0.4rem;
+
+    &::after {
+      right: -0.4rem;
+      top: 0.38rem;
+    }
+  }
+
+  .spinner__amount-item:nth-child(6) {
+    margin-right: 0.4rem;
+
+    &::after {
+      right: -0.4rem;
+      top: 0.38rem;
+    }
+  }
+
+  .spinner__amount-container {
+    transform: translateY(-100%);
+  }
+
+
+  @keyframes spinner-empty {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes spinner-0 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-9.09%);
+    }
+  }
+
+  @keyframes spinner-1 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-18.181%);
+    }
+  }
+
+  @keyframes spinner-2 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-27.272%);
+    }
+  }
+
+  @keyframes spinner-3 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-36.3636%);
+    }
+  }
+
+  @keyframes spinner-4 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-45.4545%);
+    }
+  }
+
+  @keyframes spinner-5 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-54.5454%);
+    }
+  }
+
+  @keyframes spinner-6 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-63.6363%);
+    }
+  }
+
+  @keyframes spinner-7 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-72.7272%);
+    }
+  }
+
+  @keyframes spinner-8 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-81.8181%);
+    }
+  }
+
+  @keyframes spinner-9 {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(-90.9%);
+    }
+  }
+}

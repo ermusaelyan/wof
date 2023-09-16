@@ -1,0 +1,182 @@
+.demo__field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/img/global/demo-backgorund.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.demo__layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65%;
+  width: auto;
+  background-image: url("/assets/img/global/demo-layer.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  z-index: 1;
+}
+
+.demo__main {
+  width: 100%;
+  height: 41%;
+  position: relative;
+}
+
+.demo__coins {
+  display: block;
+  width: 24rem;
+  height: 17rem;
+  position: absolute;
+  top: -9.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("/assets/img/global/coins.png");
+  background-size: 100% 100%;
+  z-index: 10;
+}
+
+.demo__logo {
+  width: 11.76rem;
+  margin: 0 auto;
+  position: absolute;
+  top: -5.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-svg {
+  width: 11.76rem;
+  height: auto;
+}
+
+.demo__roulette-field {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.demo__roulette {
+  animation-name: roulette-rotate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.demo__roulette-inner {
+  position: relative;
+}
+
+.demo__roulette-img {
+  width: 14rem;
+  height: auto;
+}
+
+.demo__roulette-arrow {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: rotate(180deg);
+}
+
+.demo__roulette-arrow-img {
+  width: 1rem;
+  margin-right: -0.5rem;
+}
+
+.demo-play__field {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.demo-play {
+  height: 78%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.demo-play-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo-play-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo-play__demo {
+  margin-bottom: 0.5rem;
+}
+
+
+.demo-play__play {
+  margin-bottom: 2.6rem;
+}
+
+.nrgaming-img {
+  width: 6.16rem;
+}
+
+.demo-play__time {
+  font-size: 1.8rem;
+  color: rgba(var(--wof-orange1), 1);
+  margin-bottom: 1.8rem;
+}
+
+.demo-play__play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.6rem;
+  height: 2.93rem;
+  border-radius: 1.43rem;
+  padding: 0;
+  font-size: 1.63rem;
+  color: rgba(var(--wof-white), 1);
+  background-color: rgba(var(--wof-green5), 1);
+  box-shadow: 0 0.1rem 0.33rem 0 rgba(0, 0, 0, 0.35), inset 0 0.07rem 0 0 rgba(255, 255, 255, 0.35);
+  border: none;
+  text-decoration: none;
+}
+
+.demo-play__demo-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.23rem;
+  height: 2rem;
+  font-size: 1rem;
+  color: rgba(var(--wof-orange2), 1);
+  border: 0.07rem solid rgba(var(--wof-orange2), 1);
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.33rem 0 rgba(0, 0, 0, 0.35);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.demo-play__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

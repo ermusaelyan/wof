@@ -1,0 +1,409 @@
+@media (min-width: 1150px) {
+  html {
+    font-size: 16px;
+  }
+
+  ::-webkit-scrollbar {
+    display: inline-block;
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .wof {
+    position: relative;
+    z-index: 1;
+    //background-image: url("../../assets/img/desktop/background-1.jfif");
+    background-repeat: repeat;
+    background-size: auto;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background-image: url("../../assets/img/desktop/background-shadow.png");
+      background-size: 100% 100%;
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(var(--wof-green), 0.7);
+    border-radius: 10px;
+  }
+
+  .wrapper {
+    height: calc(100% - 42px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+
+    .container {
+      padding: 0 10px 50px;
+      justify-content: space-between;
+    }
+  }
+
+  .aside {
+    width: 446px;
+    min-width: 446px;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+  .main__field {
+    width: 678px;
+    min-width: 678px;
+    height: 100%;
+    padding-bottom: 0;
+    justify-content: flex-start;
+  }
+
+  .main__jackpot {
+    width: 534px;
+    height: 115px;
+    margin: 40px 0 0 88px;
+  }
+
+  .main__jackpot-title {
+    font-size: 38px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+    padding-right: 12px;
+  }
+
+  .main__jackpot-amount {
+    font-size: 31px;
+    padding: 0;
+    letter-spacing: 2px;
+    margin-right: 3px;
+  }
+
+  .main__jackpot-arrow-arrow {
+    width: 27px;
+  }
+
+  .main__jackpot-currency {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: -15px;
+  }
+
+  .main__jackpot-currency-img {
+    width: 40px;
+  }
+
+  .main__jackpot-inner::after {
+    height: 3px;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+  }
+
+  .main__jackpot-inner::before {
+    height: 3px;
+    bottom: -4px;
+    left: 100px;
+    right: 90px;
+  }
+
+  .main {
+    height: 334px;
+    margin-top: 40px;
+  }
+
+  .main__grid {
+    padding: 0;
+    display: flex;
+  }
+
+  .main__grid-top {
+    display: flex;
+    align-items: center;
+  }
+
+  .main__grid-top-button {
+    width: 42px;
+    height: 248px;
+    font-size: 26px;
+    border-radius: 33.1px 6.9px 6.9px 33.1px;
+    border-width: 2px;
+  }
+
+  .main__grid-middle-field {
+    flex-direction: column-reverse;
+  }
+
+  .main__grid-middle {
+    width: 596px;
+    flex-direction: column;
+  }
+
+  .main__grid-middle-column {
+    width: calc(100% - 6px);
+    display: flex;
+    margin: 0 3px;
+
+    &:last-child {
+      margin: 0 3px;
+    }
+
+    &:first-child {
+      margin: 0 3px;
+    }
+  }
+
+
+  .main__grid-bottom {
+    width: auto;
+    margin: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .main__grid-left {
+    display: flex;
+    padding: 0;
+    width: auto;
+    margin: 0 3px;
+  }
+
+  .main__grid-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  .main__grid-middle-odd {
+    border-width: 2px;
+    width: 46px;
+    height: 80px;
+    margin: 2px 2px;
+  }
+
+  .main__grid-middle-odd-button-inner {
+    border-width: 2px;
+    width: 37px;
+    height: 37px;
+    font-size: 23px;
+    transition: 0.2s;
+  }
+
+  .main__grid-middle-odd-button-chip-img {
+    width: 23px;
+    height: auto;
+  }
+
+  .main__grid-middle-odd-button-chip {
+    display: flex;
+    justify-content: center;
+    width: 23px;
+    max-width: 23px;
+    margin: 0;
+    height: auto;
+    max-height: 0;
+    transition: 0.2s;
+  }
+
+  .main__grid-middle-odd-button {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: inherit;
+    margin: 0;
+    border-width: 2px;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+
+  .main__grid-middle-odd-button:hover {
+    background-color: rgba(var(--wof-white), 0.25);
+
+    .main__grid-middle-odd-button-inner {
+      filter: brightness(1.3);
+    }
+  }
+
+
+  .main__grid-top-button:hover {
+    background-color: rgba(var(--wof-white), 0.25);
+
+    .main__grid-top-button-inner {
+      filter: brightness(1.3);
+    }
+  }
+
+  .main__grid-top-button.active:hover {
+    background-color: rgba(var(--wof-black), 0.4);
+  }
+
+  .main__grid-left-button-inner {
+    writing-mode: horizontal-tb;
+  }
+
+  .main__grid-left-button {
+    width: 72px;
+    height: 38px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-width: 2px;
+    margin: 0;
+    transition: 0.2s;
+  }
+
+  .main__grid-left-button:hover {
+    background-color: rgba(var(--wof-white), 0.25);
+  }
+
+  .main__grid-left-group {
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .main__grid-left-group-color .main__grid-left-button {
+    width: 141px;
+    height: 38px;
+  }
+
+  .main__grid-left-button-color {
+    min-width: 20px;
+    min-height: 20px;
+    border-width: 2px;
+    border-radius: 3px;
+    transform: rotate(140deg) skew(10deg);
+  }
+
+  .main__grid-left-button-inner strong {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  .main__grid-right .main__grid-left-group {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: calc(100% / 3);
+  }
+
+  .main__grid-right .main__grid-left-button {
+    height: 38px;
+    width: 100%;
+  }
+
+
+  .main__grid-bottom-group {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .main__grid-bottom-button {
+    width: 40px;
+    height: 79px;
+    border-width: 2px;
+    font-size: 23px;
+    border-radius: 10px;
+    margin: 2px 0;
+    transition: 0.2s;
+  }
+
+  .main__grid-bottom-button:hover {
+    background-color: rgba(var(--wof-white), 0.25);
+  }
+
+  .main__grid-bottom-group:first-child .main__grid-bottom-button {
+    border-radius: 10px 10px 32.4px 7px;
+  }
+
+  .main__grid-bottom-group:last-child .main__grid-bottom-button {
+    border-radius: 7.04px 32.4px 10px 10px;
+  }
+
+  .main__grid-middle-odd-button.active {
+    .main__grid-middle-odd-button-chip {
+      width: 23px;
+      max-width: 23px;
+      max-height: 23px;
+      height: 23px;
+      margin: 5px 0 0;
+      transition: 0.2s;
+    }
+  }
+
+  .main__grid-middle-odd-button.active:hover {
+    background-color: rgba(var(--wof-black), 0.4);
+  }
+
+  .main__stake-field {
+    margin: 34px 0 0;
+    height: auto;
+  }
+
+  .main__stake {
+    width: 240px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 5px;
+    margin-right: 53px;
+  }
+
+  .main__stake-minus {
+    width: 42px;
+    height: 42px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.35), inset 0 2px 0 0 rgba(255, 255, 255, 0.35);
+  }
+
+  .main__stake-plus {
+    width: 18px;
+    height: auto;
+  }
+
+  .main__stake-minus-line {
+    width: 18px;
+    height: 4px;
+  }
+
+  .main__stake-label {
+    width: 146px;
+  }
+
+  .main__stake-input {
+    font-size: 17px;
+  }
+
+  .main__button {
+    width: 240px;
+    height: 50px;
+    font-size: 28px;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.35);
+    transition: 0.2s;
+  }
+
+  .main__button:hover {
+    filter: brightness(1.2);
+    transform: scale(1.02);
+  }
+
+  .disable::after {
+    border-radius: 25px;
+  }
+}

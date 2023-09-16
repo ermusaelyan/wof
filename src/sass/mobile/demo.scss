@@ -1,0 +1,50 @@
+@media (max-width: 1149px) {
+  .demo__field .header {
+    display: none;
+  }
+
+  .demo__coins {
+    max-width: 750px;
+    max-height: 525px;
+  }
+
+  .demo__main {
+    max-height: 270px;
+  }
+
+  .logo-svg,
+  .demo__logo {
+    max-width: 350px;
+  }
+
+  .demo__roulette-img {
+    max-width: 400px;
+  }
+
+  .nrgaming-img {
+    max-width: 185px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1149px) {
+  .demo-play__play {
+    margin-bottom: 0.8rem;
+  }
+
+  .demo-play__time {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .demo-play__play-button {
+    width: 8.6rem;
+    height: 2.6rem;
+    font-size: 1.4rem;
+  }
+
+  .demo-play__demo-button {
+    width: 6.5rem;
+    height: 1.75rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,399 @@
+@media (min-width: 1150px) {
+  .game-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 437px;
+    margin-top: 26px;
+  }
+
+  .game-grid__tab-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 52px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .game-grid__tab-item {
+    height: 30px;
+    width: calc(100% / 4 - 1.5px);
+    margin-right: 2px;
+    background-color: rgba(var(--wof-black), 0.3);
+    font-size: 12px;
+    color: rgba(var(--wof-yellow1), 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    cursor: pointer;
+
+    img {
+      width: 24px;
+      height: 15px;
+      transition: 0.2s;
+    }
+  }
+
+  .current-game__img {
+    width: 24px;
+    transition: 0.2s;
+  }
+
+  .statistics__img {
+    width: 24px;
+    transition: 0.2s;
+  }
+
+  .draw-history__img {
+    width: 19px;
+    transition: 0.2s;
+  }
+
+  .my-history__img {
+    width: 18px;
+    transition: 0.2s;
+  }
+
+  .game-grid__tab-item:last-child {
+    margin-right: 0;
+  }
+
+  .game-grid__tab-item:hover {
+    .game-grid__tab-text {
+      max-height: 15px;
+    }
+
+    img {
+      max-height: 0;
+    }
+  }
+
+  .game-grid__tab-item.active {
+    height: 100%;
+    background-color: rgba(var(--wof-black), 0.15);
+    border-radius: 4px 4px 0 0;
+
+    &:hover {
+      height: 100%;
+      background-color: rgba(var(--wof-black), 0.15);
+      border-radius: 4px 4px 0 0;
+
+      .game-grid__tab-text {
+        max-height: 23px;
+        padding-top: 8px;
+      }
+
+      img {
+        max-height: 15px;
+      }
+    }
+
+    .game-grid__tab-text {
+      max-height: 23px;
+      padding-top: 8px;
+    }
+  }
+
+  .game-grid__tab-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .game-grid__tab-text {
+    font-family: "RobotoBold", sans-serif;
+    max-height: 0;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  .game-grid__inner-list {
+    display: flex;
+    height: calc(100% - 52px);
+    overflow-y: auto;
+    margin: 0;
+    padding: 0 7px 0 0;
+    list-style-type: none;
+    background-color: rgba(var(--wof-black), 0.15);
+    border-radius: 0 0 4px 4px;
+  }
+
+  .game-grid__inner-item {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+
+  .main__statistics {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .statistics__header {
+    display: none;
+  }
+
+  .main__statistics-inner {
+    padding: 0 0 0 13px;
+  }
+
+  .statistics__list {
+    padding: 0 10px 0 0;
+    height: calc(100% - 34px);
+  }
+
+  .statistics__header-desktop {
+    font-family: "RobotoBold", sans-serif;
+    font-size: 12px;
+    color: rgba(var(--wof-yellow1), 1);
+    padding: 10px;
+  }
+
+  .statistics__item {
+    height: 47px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+
+  .statistics__item.active {
+    border-width: 2px;
+  }
+
+  .statistics__item-stake-number {
+    width: 39px;
+    height: 39px;
+    font-size: 23px;
+    border-width: 2px;
+  }
+
+  .statistics__item-stake-chip-img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .statistics__item-line {
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  .statistics__item-line-field {
+    width: calc(100% - 26%);
+  }
+
+  .statistics__item-stake {
+    width: 21%;
+  }
+
+  .statistics__item.active .statistics__item-stake-chip {
+    width: 23px;
+    max-width: 23px;
+    margin-left: 5px;
+  }
+
+  .draw-history {
+    width: 100%;
+    padding: 13px 0 0 13px;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .draw-history__list {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+
+  .draw-history__item {
+    height: 42px;
+    border-radius: 10px 21px 21px 10px;
+    font-size: 16px;
+    margin-bottom: 9px;
+    padding: 0 4px 0 15px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .draw-history__odd {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    border-width: 2px;
+  }
+
+  .draw-history__id {
+    margin-right: 38px;
+  }
+
+  .draw-history__time {
+    width: 45px;
+  }
+
+  .start__ticket-list-field {
+    height: 100%;
+    padding: 22px 0 0 3px;
+  }
+
+  .start__ticket-list {
+    padding-bottom: 0;
+  }
+
+  .start__ticket-list-inner {
+    padding: 0 10px;
+  }
+
+  .start__ticket-item {
+    margin-bottom: 10px;
+  }
+
+  .start__ticket-head {
+    height: 19px;
+    background-image: url("../../assets/img/desktop/ticket-head-yellow.svg");
+    background-size: 100% 100%;
+    font-size: 11px;
+    padding: 0 13px 0 7px;
+  }
+
+  .start__ticket-item.active .start__ticket-head {
+    background-image: url("../../assets/img/desktop/ticket-head-green.svg");
+  }
+
+  .start__ticket-title {
+    width: 70px;
+  }
+
+  .start__ticket-bet {
+    width: 70px;
+    font-size: 12px;
+  }
+
+  .start__ticket-bet-amount {
+    margin-right: 12px;
+  }
+
+  .start__ticket-bet-title {
+    margin-right: 7px;
+  }
+
+  .start__ticket-time {
+    font-size: 11px;
+  }
+
+  .start__ticket-odd-item {
+    width: 28px;
+    height: 28px;
+    border-width: 2px;
+    font-size: 14px;
+  }
+
+  .start__ticket-odd-item-chip-list {
+    width: 80px;
+    height: 64px;
+    margin-left: -40px;
+    margin-top: -32px;
+  }
+
+  .start__ticket-odd-item-field {
+    width: 29px;
+    height: 29px;
+    margin-left: 13px;
+  }
+
+  .start__ticket-odd-list {
+    margin-left: -3px;
+  }
+
+  .start__ticket-odd-list:nth-child(2n+2) {
+    margin: -5px 0 0 17.2px;
+  }
+
+  .start__ticket-body {
+    width: calc(100% - 2px);
+    padding: 2px 0;
+    border-image-width: 15px;
+    border-image-outset: 1px;
+    border-image-slice: 15;
+    border-style: solid;
+    border-width: 3px 4px 3px;
+  }
+
+  .my-history {
+    height: 100%;
+    overflow: hidden;
+    padding: 22px 0 0 3px;
+
+    .start__ticket-head {
+      padding-right: 5px;
+    }
+  }
+
+  .my-history__list {
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 10px;
+  }
+
+  .my-history__item-id {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+
+  .start__ticket-left .start__ticket-title {
+    width: 60px;
+  }
+
+  .start__ticket-right {
+    width: 130px;
+  }
+
+  .start__ticket-win {
+    width: 25px;
+  }
+
+  .start__ticket-odd-item::after {
+    top: -1.5px;
+    right: -1.5px;
+    bottom: -1.5px;
+    left: -1.5px;
+  }
+
+  .start__ticket-odd-item--zoom {
+    transform: scale(1.4);
+    position: relative;
+    filter: brightness(1.1);
+    z-index: 2;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(var(--wof-white), 1), 0 0 0 3px rgba(var(--wof-border-green), 1);
+  }
+
+  .current__game-empty {
+    display: none;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: rgba(var(--wof-yellow1), 1);
+  }
+
+  .current__game-empty-img {
+    width: 207px;
+    margin-bottom: 15px;
+  }
+
+  .current__game-empty:only-child {
+    display: flex;
+  }
+
+  .current__game-empty-text {
+    font-family: "RobotoBold", sans-serif;
+    width: 220px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}

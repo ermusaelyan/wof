@@ -1,0 +1,143 @@
+@media (min-width: 1150px) {
+  .demo__field {
+    flex-direction: column;
+    background-image: url("../../assets/img/desktop/demo.png");
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../assets/img/desktop/background-shadow.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  .demo__field .header__time {
+    display: none;
+  }
+
+  .demo__field .header__id {
+    display: none;
+  }
+
+  .demo__main {
+    margin-top: 40px;
+  }
+
+  .demo__coins {
+    width: 715px;
+    height: 360px;
+    background-image: url("../../assets/img/desktop/coins.png");
+    top: auto;
+    bottom: -40px;
+  }
+
+  .demo-play__buttons {
+    flex-direction: row;
+  }
+
+  .demo-play {
+    height: 57%;
+    max-height: 350px;
+  }
+
+
+  .demo-play-bottom {
+    width: 100%;
+    background-color: rgba(var(--wof-dark-green), 0.5);
+    padding: 10px 0;
+  }
+
+  .nrgaming {
+    display: flex;
+    align-items: center;
+  }
+
+  .nrgaming-img {
+    width: 130px;
+  }
+
+
+  .demo__layer {
+    height: 76%;
+    background-image: url("../../assets/img/desktop/layer.png");
+  }
+
+  .demo__roulette-field {
+    top: auto;
+    bottom: -52%;
+  }
+
+  .demo__roulette-img {
+    width: 266px;
+    height: 266px;
+  }
+
+  .demo__logo {
+    width: 240px;
+    top: auto;
+    bottom: 230px;
+  }
+
+  .logo-svg {
+    width: 240px;
+  }
+
+  .demo-play__time {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .demo-play__demo {
+    margin-bottom: 0;
+  }
+
+  .demo-play__play {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .demo-play__play-button {
+    width: 138px;
+    height: 42px;
+    font-size: 22px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.28), inset 0 2px 0 0 rgba(255, 255, 255, 0.35);
+    transition: 0.2s;
+  }
+
+  .demo-play__play-button:hover {
+    filter: brightness(1.2);
+    transform: scale(1.02);
+  }
+
+  .demo-play__demo-button {
+    width: 143px;
+    height: 42px;
+    font-size: 21px;
+    border-width: 2px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.28);
+    transition: 0.2s;
+  }
+
+  .demo-play__demo-button:hover {
+    filter: brightness(1.2);
+    transform: scale(1.02);
+  }
+
+  .demo__roulette-arrow {
+    top: -24px;
+  }
+
+  .demo__roulette-arrow-img {
+    width: 22px;
+    margin-right: -11px;
+  }
+}
